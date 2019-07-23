@@ -40,6 +40,12 @@ spring:
     cache:
           ehcache:
             config: classpath:ehcache.xml
+    thymeleaf:
+      prefix: classpath:/templates/
+      cache: false
+      mode: LEGACYHTML5
+      servlet:
+        content-type: text/html
 mybatis:
   type-aliases-package: com.ddzj.entity
   mapper-locations: classpath*:mapper/*Mapper.xml

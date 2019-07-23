@@ -2,14 +2,14 @@ package com.ddzj;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @MapperScan("com.ddzj.repository")
 @EnableCaching
+@EnableTransactionManagement
 public class SpringBootShiroApplication {
     /*
 	    1、编写好后就可以启动程序，访问http://localhost:8080/userInfo/userList页面，

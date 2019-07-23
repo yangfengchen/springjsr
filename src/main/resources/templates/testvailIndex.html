@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <title>提交</title>
+</head>
+<body>
+    <form id="formToIndex" th:action="@{/testvailData}" method="post">
+        <input name="name" th:value="123"/>
+        <input name="phone" th:value="${name}"/>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
