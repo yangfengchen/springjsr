@@ -1,7 +1,7 @@
 server:
   port: 9091
   servlet:
-    context-path: /demo
+    context-path: /ebus
   undertow:
       accesslog:
         #是否打开 undertow 日志，默认为 false
@@ -48,7 +48,7 @@ spring:
         content-type: text/html
 mybatis:
   type-aliases-package: com.ddzj.entity
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  mapper-locations: classpath*:mapper/*mapper.xml
 logging:
   level:
     com.ddzj.repository: debug
